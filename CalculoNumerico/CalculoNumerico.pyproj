@@ -45,7 +45,9 @@
     <Folder Include="SistemaEquacoesLineares\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MetodosEncontrarRaizes\README.md" />
+    <Content Include="MetodosEncontrarRaizes\README.md">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="SistemaEquacoesLineares\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
