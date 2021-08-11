@@ -12,7 +12,8 @@
 
 # 4. Método Iterativo Linear:
 *(iterativo_linear.py)*
- - Transforma o problema de encontrar raízes um problema de ponto fixo (ponto fixo é equivalente à f(x) = x).
+ - Transforma o problema de encontrar raízes num problema de ponto fixo (ponto fixo é equivalente à f(x) = x, psi(x));
+ - Através de psi(x) é realizado um loop para identificação de um f(x) < ERRO.
 
 # 5. Método de Newton:
 *(metodo_newton.py)*
