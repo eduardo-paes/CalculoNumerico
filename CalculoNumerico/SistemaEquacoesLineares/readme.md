@@ -5,4 +5,3 @@
 # Eliminação Gaussiana:
 *(gauss_elim.py)*
  - Transforma a matriz A do sistema Ax = b numa matriz triangular e, desse modo, é possível encontrar um vetor x através das soluções triangulares desenvolvidas.
-
