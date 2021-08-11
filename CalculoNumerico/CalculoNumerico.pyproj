@@ -45,8 +45,8 @@
     <Folder Include="SistemaEquacoesLineares\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MetodosEncontrarRaizes\readme.md" />
-    <Content Include="SistemaEquacoesLineares\readme.md" />
+    <Content Include="MetodosEncontrarRaizes\README.md" />
+    <Content Include="SistemaEquacoesLineares\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
