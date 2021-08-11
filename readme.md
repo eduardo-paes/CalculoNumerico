@@ -1,4 +1,8 @@
-#Métodos Desenvolvidos em Aula (Cálculo Numério 2021.1)
+#MÃ©todos Desenvolvidos em Aula (CÃ¡lculo NumÃ©rio 2021.1)
+-------------------------------------------------------
 
-##Métodos para identificação de raízes de funções não lineares
-##Métodos para solução de sistemas de equações lineares
+##MÃ©todos para identificaÃ§Ã£o de raÃ­zes de funÃ§Ãµes nÃ£o lineares
+--------------------------------------------------------------
+
+##MÃ©todos para soluÃ§Ã£o de sistemas de equaÃ§Ãµes lineares
+-------------------------------------------------------
