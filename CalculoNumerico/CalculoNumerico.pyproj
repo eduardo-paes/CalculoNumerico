@@ -1,0 +1,59 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7bd8af94-e90d-4246-98c1-45d46472c244</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>MetodosEncontrarRaizes\bisec.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>CalculoNumerico</Name>
+    <RootNamespace>CalculoNumerico</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="SistemaEquacoesLineares\gauss_elim.py" />
+    <Compile Include="SistemaEquacoesLineares\resolucao_triangular.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetodosEncontrarRaizes\bisec.py" />
+    <Compile Include="MetodosEncontrarRaizes\metodo_newton.py" />
+    <Compile Include="MetodosEncontrarRaizes\iterativo_linear.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetodosEncontrarRaizes\raiz_quadrada.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetodosEncontrarRaizes\regula_falsi.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetodosEncontrarRaizes\secante.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MetodosEncontrarRaizes\" />
+    <Folder Include="SistemaEquacoesLineares\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetodosEncontrarRaizes\summary.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

@@ -1,0 +1,6 @@
+Método da Bisseção: 
+	* Encontra a raiz variando entre a e b até encontrar um f(x) < ERRO;
+Método da Secante: 
+	* Traça uma secante entre dois pontos e exclui o ponto mais antigo, vai assim se aproximando de um f(x) < ERRO.
+Método Regula-Falsi:
+	* União dos métodos da Bisseção e Secante: 
