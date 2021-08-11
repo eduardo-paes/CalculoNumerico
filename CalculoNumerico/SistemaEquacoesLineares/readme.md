@@ -1,6 +1,6 @@
-# Soluções para Sistemas com Matrizes Triangulares: 
-	* Encontra um vetor x solução do sistema linear Ax = b.
+# SoluÃ§Ãµes para Sistemas com Matrizes Triangulares: 
+ - Encontra um vetor x soluÃ§Ã£o do sistema linear Ax = b.
 
-# Eliminação Gaussiana:
-	* Transforma a matriz A do sistema Ax = b numa matriz triangular e, desse modo, é possível encontrar um vetor x através das soluções triangulares desenvolvidas.
+# EliminaÃ§Ã£o Gaussiana:
+ - Transforma a matriz A do sistema Ax = b numa matriz triangular e, desse modo, Ã© possÃ­vel encontrar um vetor x atravÃ©s das soluÃ§Ãµes triangulares desenvolvidas.
 
