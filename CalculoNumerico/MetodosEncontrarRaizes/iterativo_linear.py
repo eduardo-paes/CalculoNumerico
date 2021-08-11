@@ -13,7 +13,7 @@ x = 1.2
 e = 1e-8
 i = 0
 
-while ( abs( x - raiz_psi(x) ) > e ):
+while (abs(x - raiz_psi(x)) > e):
     x = raiz_psi(x)
     i += 1
     print(i, x, f(x))
