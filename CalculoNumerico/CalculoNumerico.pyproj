@@ -21,6 +21,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="SistemaEquacoesLineares\gauss_elim_partial_pivot.py" />
+    <Compile Include="SistemaEquacoesLineares\lu_decomp.py" />
     <Compile Include="SistemaEquacoesLineares\gauss_elim.py" />
     <Compile Include="SistemaEquacoesLineares\resolucao_triangular.py">
       <SubType>Code</SubType>

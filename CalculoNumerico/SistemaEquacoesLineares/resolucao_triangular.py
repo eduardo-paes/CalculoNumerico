@@ -11,7 +11,7 @@ def mat_vec_mul(A, v):
     return x
 
 # Soluciona matriz triangular superior
-def forward_substitution(A, b):
+def solve_sup(A, b):
     n = len(b)
     x = [0.] * n
     for i in range(n-1, -1, -1):
@@ -22,7 +22,7 @@ def forward_substitution(A, b):
     return x
 
 # Soluciona matriz triangular inferior
-def backward_substitution(A, b):
+def solve_inf(A, b):
     n = len(b)
     x = [0.] * n
     for i in range(n):
@@ -35,7 +35,7 @@ def backward_substitution(A, b):
 A = [[1.,2.,-2], [0.,2.,-3.], [0., 0., 1]]
 b = [1.,3.,4.]
 
-x = forward_substitution(A,b)
+x = solve_sup(A,b)
 print(x)
 
 # Prova Real
