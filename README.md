@@ -12,4 +12,6 @@
 
 ## Métodos para solução de sistemas de equações lineares
     - Soluções para Sistemas com Matrizes Triangulares;
-    - Eliminação Gaussiana.
+    - Eliminação Gaussiana;
+    - Eliminação Gaussiana com Pivoteamento Parcial;
+    - Decomposição LU.
