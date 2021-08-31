@@ -15,7 +15,7 @@ def raiz_quadrada(N):
         a = (F(x2, N) - F(x1, N))/(x2-x1)
         b = F(x1, N) - a*x1
         x3 = -b/a
-
+        print(a, b, x3)
         x1 = x2
         x2 = x3
         i =+ 1

@@ -21,7 +21,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Atividades\ativ1_q2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SistemaEquacoesLineares\gauss_elim_compact.py" />
     <Compile Include="SistemaEquacoesLineares\gauss_elim_partial_pivot.py" />
+    <Compile Include="SistemaEquacoesLineares\cholesky.py" />
     <Compile Include="SistemaEquacoesLineares\lu_decomp.py" />
     <Compile Include="SistemaEquacoesLineares\gauss_elim.py" />
     <Compile Include="SistemaEquacoesLineares\resolucao_triangular.py">
@@ -44,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MetodosEncontrarRaizes\" />
+    <Folder Include="Atividades\" />
     <Folder Include="SistemaEquacoesLineares\" />
   </ItemGroup>
   <ItemGroup>
