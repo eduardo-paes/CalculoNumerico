@@ -24,6 +24,25 @@
     <Compile Include="Atividades\ativ1_q2.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Atividades\ativ2_q2.py" />
+    <Compile Include="Atividades\ativ2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetodosIterativos\gauss_seidel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetodosIterativos\jacobi_richardson.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetodosIterativos\leverrier.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetodosIterativos\potencia.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NormaMatrizes\norms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SistemaEquacoesLineares\gauss_elim_compact.py" />
     <Compile Include="SistemaEquacoesLineares\gauss_elim_partial_pivot.py" />
     <Compile Include="SistemaEquacoesLineares\cholesky.py" />
@@ -50,12 +69,15 @@
   <ItemGroup>
     <Folder Include="MetodosEncontrarRaizes\" />
     <Folder Include="Atividades\" />
+    <Folder Include="MetodosIterativos\" />
+    <Folder Include="NormaMatrizes\" />
     <Folder Include="SistemaEquacoesLineares\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetodosEncontrarRaizes\README.md">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="NormaMatrizes\README.md" />
     <Content Include="SistemaEquacoesLineares\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
