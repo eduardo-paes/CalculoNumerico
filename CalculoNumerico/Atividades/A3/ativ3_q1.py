@@ -76,4 +76,4 @@ def Cholesky(A, b):
 A = [[4.,2.,-4.], [2.,10.,4.], [-4., 4., 9.]]
 b = [0., 6., 5.]
 
-print("Resultado: ", Cholesky(A, b))
+print("### Questão 1\n\tResultado: ", Cholesky(A, b))

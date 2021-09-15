@@ -12,9 +12,9 @@ def MaxAbs(v):
     return max([ abs(v[i]) for i in range(len(v)) ])
 
 """
-Método Iterativo Linear de Jacobi-Richardson para identificação do vetor x que soluciona a equação Ax = b.
+Método Iterativo Linear de Gauss-Seidel para identificação do vetor x que soluciona a equação Ax = b.
 """
-def JacobiRichardson(A, b, epsilon):
+def GaussSeidel(A, b, epsilon):
     n = len(A)
     G = [[A[i][j] for j in range(n)] for i in range(n)]     # G = A*
     L = [[0.] * n for i in range(n)]                        # Matriz diagonal inferior de G
@@ -44,8 +44,10 @@ def JacobiRichardson(A, b, epsilon):
         for i in range(n):
             s = 0.
             for j in range(n):
-                s -= (L[i][j]*x0[j] + R[i][j]*x0[j])
+                s -= (L[i][j]*x[j] + R[i][j]*x0[j])
             x[i] = s + b[i]
+
+        print(MaxAbs(VecVecSub(x, x0))/MaxAbs(x))
 
         if (MaxAbs(VecVecSub(x, x0))/MaxAbs(x) < epsilon):
             x0 = x
@@ -54,7 +56,7 @@ def JacobiRichardson(A, b, epsilon):
     return x0
 
 # Main
-A = [[10., 2., 1.], [1., 5., 1.], [2., 3., 10.]]
-b = [7., -8., 6.]
+A = [[1.,1.,2., 7.], [5.,1.,1.,1.], [1.,-6.,1.,1.], [1.,1.,8.,1.]]
+b = [-5.,4.,7.,7.]
 
-print("Resultado: ", JacobiRichardson(A, b, 1e-2))
+print("### Questão 2\n\tResultado: ", GaussSeidel(A, b, 0.1))

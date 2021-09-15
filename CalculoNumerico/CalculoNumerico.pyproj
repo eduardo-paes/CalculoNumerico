@@ -21,11 +21,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Atividades\ativ1_q2.py">
+    <Compile Include="Atividades\A1\ativ1_q2.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Atividades\ativ2_q2.py" />
-    <Compile Include="Atividades\ativ2.py">
+    <Compile Include="Atividades\A2\ativ2_q2.py" />
+    <Compile Include="Atividades\A2\ativ2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Atividades\A3\ativ3_q1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Atividades\A3\ativ3_q3.py" />
+    <Compile Include="Atividades\A3\ativ3_q2.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="MetodosIterativos\gauss_seidel.py">
@@ -67,6 +74,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Atividades\A1\" />
+    <Folder Include="Atividades\A2\" />
+    <Folder Include="Atividades\A3\" />
     <Folder Include="MetodosEncontrarRaizes\" />
     <Folder Include="Atividades\" />
     <Folder Include="MetodosIterativos\" />
