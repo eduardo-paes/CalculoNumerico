@@ -42,10 +42,10 @@ def JacobiRichardson(A, b, epsilon):
     while (True):
         x = [0.] * n
         for i in range(n):
-            s = 0.
+            s = b[i]
             for j in range(n):
                 s -= (L[i][j]*x0[j] + R[i][j]*x0[j])
-            x[i] = s + b[i]
+            x[i] = s
 
         if (MaxAbs(VecVecSub(x, x0))/MaxAbs(x) < epsilon):
             x0 = x

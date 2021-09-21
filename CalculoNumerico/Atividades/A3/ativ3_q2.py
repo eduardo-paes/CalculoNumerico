@@ -42,12 +42,15 @@ def GaussSeidel(A, b, epsilon):
     while (True):
         x = [0.] * n
         for i in range(n):
-            s = 0.
+            s = b[i]
             for j in range(n):
                 s -= (L[i][j]*x[j] + R[i][j]*x0[j])
-            x[i] = s + b[i]
+            x[i] = s
 
-        print(MaxAbs(VecVecSub(x, x0))/MaxAbs(x))
+        # Para iteração caso não haja convergência
+        if (MaxAbs(x0)!= MaxAbs(x0)):
+            print("\tMétodo não convergente para a matriz informada.")
+            break;
 
         if (MaxAbs(VecVecSub(x, x0))/MaxAbs(x) < epsilon):
             x0 = x
@@ -59,4 +62,5 @@ def GaussSeidel(A, b, epsilon):
 A = [[1.,1.,2., 7.], [5.,1.,1.,1.], [1.,-6.,1.,1.], [1.,1.,8.,1.]]
 b = [-5.,4.,7.,7.]
 
-print("### Questão 2\n\tResultado: ", GaussSeidel(A, b, 0.1))
+print("### Questão 2")
+print("\tResultado: ", GaussSeidel(A, b, 0.1))

@@ -43,7 +43,7 @@ Calcula uma matriz G da forma A = G*G(transposta)
 Com isso, é possível obter um x da seguinte forma:
 A = G*G(t) | GG(t)x = b | Gy = b | G(t)x = y
 """
-def Cholesky(A, b):
+def Cholesky(A):
     n = len(A[0])
     G = [[0.] * n for i in range(n)]
 
@@ -64,16 +64,26 @@ def Cholesky(A, b):
                     S += G[i][k] * G[j][k]
                 G[i][j] = (A[i][j] - S)/G[j][j]
 
-    # Cálculo de y fazendo: G*y = b
-    y = SolveInf(G, b)
-
-    # Cálculo de x fazendo: G(t)*x = y
-    x = SolveSup(Transposicao(G), y)
-
-    return x
+    return G
 
 # Main
 A = [[4.,2.,-4.], [2.,10.,4.], [-4., 4., 9.]]
 b = [0., 6., 5.]
 
-print("### Questão 1\n\tResultado: ", Cholesky(A, b))
+
+G = Cholesky(A)
+_G = Transposicao(G)
+
+print("### Questão 1\nDecomposição de Cholesky:" )
+print("\n\t* A: ", A)
+print("\n\t* G: ", G)
+print("\n\t* G transposta: ", _G)
+
+# Cálculo de y fazendo: G*y = b
+y = SolveInf(G, b)
+
+# Cálculo de x fazendo: G(t)*x = y
+x = SolveSup(_G, y)
+
+print("\n\t* Solução com B = [0, 6, 5]: ", x)
+print("\n")
