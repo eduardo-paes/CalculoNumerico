@@ -47,6 +47,9 @@
     <Compile Include="MetodosIterativos\potencia.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MetodosIterativos\rutishauser.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="NormaMatrizes\norms.py">
       <SubType>Code</SubType>
     </Compile>
