@@ -1,4 +1,23 @@
 """
+Verifica se a matriz é diagonalmente dominante.
+Algoritmo: |A[i][i]| > sum(|A[i][j]|), para i != j.
+Retorna True se a matriz é diagonalmente dominante, e False do contrário.
+"""
+def VerificaMatriz(A):
+    n = len(A)
+    diag = 0.
+    sum = 0.
+
+    for i in range(n):
+        diag = abs(A[i][i])
+        for j in range(n):
+            if (i != j):
+                sum += abs(A[i][j])
+        if (diag <= sum):
+            return False
+    return True
+
+"""
 Retorna a diferença do vetor x pelo vetor y.
 """
 def VecVecSub(x, y):
@@ -42,10 +61,15 @@ def GaussSeidel(A, b, epsilon):
     while (True):
         x = [0.] * n
         for i in range(n):
-            s = 0.
+            s = b[i]
             for j in range(n):
                 s -= (L[i][j]*x[j] + R[i][j]*x0[j])
-            x[i] = s + b[i]
+            x[i] = s
+
+        # Para iteração caso não haja convergência
+        if (MaxAbs(x0)!= MaxAbs(x0)):
+            print("\tMétodo não convergente para a matriz informada.")
+            break;
 
         if (MaxAbs(VecVecSub(x, x0))/MaxAbs(x) < epsilon):
             x0 = x
