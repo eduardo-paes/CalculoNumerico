@@ -59,8 +59,11 @@ def GaussSeidel(A, b, epsilon):
     return x0
 
 # Main
-A = [[1.,1.,2., 7.], [5.,1.,1.,1.], [1.,-6.,1.,1.], [1.,1.,8.,1.]]
-b = [-5.,4.,7.,7.]
+A = [[5.,1.,1.,1.], [1.,-6.,1.,1.], [1.,1.,8.,1.], [1.,1.,2., 7.]]
+b = [4.,7.,7.,-5.]
 
-print("### Questão 2")
-print("\tResultado: ", GaussSeidel(A, b, 0.1))
+print("### Questão 2\n# Utilizando o método de Gauss-Seidel:")
+print("\n\t* Fazendo A igual a: ", A)
+print("\n\t* E b igual a: ", b)
+print("\n\t* Resultado: ", GaussSeidel(A, b, 0.1))
+print("")

@@ -74,7 +74,7 @@ b = [0., 6., 5.]
 G = Cholesky(A)
 _G = Transposicao(G)
 
-print("### Questão 1\nDecomposição de Cholesky:" )
+print("### Questão 1\n# Decomposição de Cholesky:" )
 print("\n\t* A: ", A)
 print("\n\t* G: ", G)
 print("\n\t* G transposta: ", _G)
@@ -85,5 +85,5 @@ y = SolveInf(G, b)
 # Cálculo de x fazendo: G(t)*x = y
 x = SolveSup(_G, y)
 
-print("\n\t* Solução com B = [0, 6, 5]: ", x)
+print("\n\t* Solução com b = [0, 6, 5]: ", x)
 print("\n")

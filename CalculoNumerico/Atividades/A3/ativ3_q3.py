@@ -57,4 +57,7 @@ def JacobiRichardson(A, b, epsilon):
 A = [[10., 2., 1.], [1., 5., 1.], [2., 3., 10.]]
 b = [7., -8., 6.]
 
-print("### Questão 3\n\tResultado: ", JacobiRichardson(A, b, 1e-2))
+print("### Questão 3\n# Utilizando o método de Jacobi-Richardson:")
+print("\n\tResultado: ", JacobiRichardson(A, b, 1e-2))
+print("")
+
