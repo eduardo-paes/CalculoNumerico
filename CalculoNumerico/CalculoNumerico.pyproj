@@ -38,6 +38,9 @@
     <Compile Include="MetodosIterativos\gauss_seidel.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MetodosIterativos\interpolacao-polinomial.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="MetodosIterativos\jacobi_richardson.py">
       <SubType>Code</SubType>
     </Compile>
