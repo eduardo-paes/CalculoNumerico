@@ -3,7 +3,6 @@ from random import *
 def randf(n):
     return 2*n*random() -n
 
-
 def mean(X):
     s = 0.
     n = len(X)
