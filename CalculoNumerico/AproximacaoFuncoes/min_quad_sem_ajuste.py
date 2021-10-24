@@ -10,29 +10,27 @@ def mean(X):
         s += X[i]
     return s/n
 
-n = 100
+def minQuad(alpha, beta, n):
+    X = []
+    Y = []
 
-X = []
-Y = []
+    for i in range(n):
+        epsilon = randf(100)
+        X.append(i)
+        Y.append(alpha * i + beta + epsilon)
 
-alpha = 2.67
-beta = -8.71
+    xBar = mean(X)
+    yBar = mean(Y)
 
-for i in range(n):
-    epsilon = randf(100)
-    X.append(i)
-    Y.append(alpha * i + beta + epsilon)
+    num = 0.
+    den = 0.
+    for i in range(n):
+        num += X[i]*(Y[i] - yBar)
+        den += X[i]*(X[i] - xBar)
 
-xBar = mean(X)
-yBar = mean(Y)
+    a = num/den
+    b = yBar - a*xBar
+    return a,b
 
-num = 0.
-den = 0.
-for i in range(n):
-    num += X[i]*(Y[i] - yBar)
-    den += X[i]*(X[i] - xBar)
-
-a = num/den
-b = yBar - a*xBar
-
+a,b = minQuad(2.67, -8.71, 100)
 print(a,b)
