@@ -80,7 +80,7 @@ def PowerX_Y(X, j, Y):
     s += (X[i]**j) * Y[i]
   return s
 
-# Retorna y += _a[i] * (x**i), sendo i de 0 à len(_b)
+# Retorna y += _b[i] * (x**i), sendo i de 0 à len(_b)
 def PowerA_X(_b, x):
   y = 0.
   for i in range(len(_b)):
